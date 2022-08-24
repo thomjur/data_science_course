@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type="text/css" href="style.css">
+    <title>Scrape me!</title>
+</head>
+
+<body>
+    <h1>Webpage Made for Learning Purposes</h1>
+    <p class="para-explanation">This site can be used to learn basic web scraping techniques. Apart from random quotes
+        deriving from (licence free) literature, this site does not include any actual information.</p>
+    <p class="para-explanation">The following text passages are from the book "Shylock" by Hermann Sinsheimer via <a
+            href="https://www.projekt-gutenberg.org/sinsheim/shylock/shylock.html">Projekt Gutenberg</a></p>
+    <h2 id="chap1-title">Zur Vorgeschichte dieses Buches</h2>
+    <p class="para-text">Ich habe dieses Buch in den Jahren 1936 und 1937 geschrieben – in einer Welt, die es heute
+        nicht mehr gibt: in der ehemaligen Hauptstadt des Deutschen Reiches, Berlin, in der Welt der Nazis, der
+        Konzentrationslager und Pogrome, der Folterungen und Morde. Kein Wunder, daß dieses Buch, wenn es jetzt
+        erscheint, bereits eine Geschichte hinter sich hat, die zu erzählen sich lohnt.</p>
+    <p class="para-text">Ich hatte gerade einen zwei Jahre währenden Kampf um die Befreiung eines älteren Bruders hinter
+        mir, den das Nazi-Regime wegen angeblichen Landesverrats eingesperrt hatte. Der von den Nazis im April 1934
+        eingesetzte Volksgerichtshof üblen Angedenkens sprach meinen Bruder so gut wie frei. Ja, jener Volksgerichtshof
+        tat sogar das Seine, um ihn vor der Gestapo zu bewahren – am 22. Dezember 1935! Ich werde diesen Tag so wie die
+        vorausgegangenen zwei Jahre des Kampfes nie vergessen. <a href="https://www.merriam-webster.com/"
+            target="_blank">Meriam Webster</a></p>
+    <h2 id="chap2-title">Einleitung</h2>
+    <p class="para-text">Jedes bedeutende Kunstwerk hat auch geschichtliche Bedeutung. Es verzeichnet Geschichte und hat
+        teil an der Geschichte. Shakespeares »Kaufmann von Venedig« aus diesem Blickwinkel zu betrachten, ist die
+        Absicht dieses Buches. Shakespeare hat die ›haltbarste‹ nachbiblische Judenfigur geschaffen. Er hat in ihr
+        notwendig über das Judentum berichtet und gerichtet. Er hat mit ihr jüdische Geschichte geschrieben und gemacht.
+    </p>
+    <p class="para-text">Dieses Buch will ihm, vom jüdischen Standpunkt aus, den Zoll dafür erstatten, indem es die
+        Geschichte seines Shylock schreibt und erklärt. Indem es diese Geschichte schreibt, muß es den Shylock nicht nur
+        literarisch, sondern auch historisch und mythologisch zu ergründen suchen. Ihr Spielraum ist das 16.
+        Jahrhundert. Ihr Lebensraum aber ist das Schicksal des jüdischen Volkes von der biblischen Zeit an bis heute.
+    </p>
+
+    <table class="armenian-table">
+        <thead>
+            <tr>
+                <th class="tg-0pky">id</th>
+                <th class="tg-0pky">lemma</th>
+                <th class="tg-0pky">kw\_t</th>
+                <th class="tg-0pky">kw\_l</th>
+                <th class="tg-0pky">wf\_t</th>
+                <th class="tg-0pky">cf\_t</th>
+                <th class="tg-0pky">wf\_l</th>
+                <th class="tg-0pky">cf\_l</th>
+                <th class="tg-0pky">sum</th>
+                <th class="tg-0pky">domain</th>
+                <th class="tg-0pky">semantic\_field</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">բորոտ</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">1;2</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">29</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">leper\_B2-/S2mf</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky">մկրտել</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">9</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">22</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">baptize\_S9</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">հոգի</td>
+                <td class="tg-0pky">5</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">2;10</td>
+                <td class="tg-0pky">6;22</td>
+                <td class="tg-0pky">26</td>
+                <td class="tg-0pky">24</td>
+                <td class="tg-0pky">100</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">spirit\_S9</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">4</td>
+                <td class="tg-0pky">ջուր</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">object</td>
+                <td class="tg-0pky">water\_O1.2</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">5</td>
+                <td class="tg-0pky">աղքատ</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">beggar\_I1.1-/S2mf</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">6</td>
+                <td class="tg-0pky">հուր</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">object</td>
+                <td class="tg-0pky">fire\_O4.6+</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">7</td>
+                <td class="tg-0pky">ամօթ</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">23</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">shame\_G2.2-</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">8</td>
+                <td class="tg-0pky">ասել</td>
+                <td class="tg-0pky">-1</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1;19</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">36</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">48</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">say\_Q2.1</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">9</td>
+                <td class="tg-0pky">յիսուս</td>
+                <td class="tg-0pky">-1</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1;8</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">10</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">13</td>
+                <td class="tg-0pky">person</td>
+                <td class="tg-0pky">christ\_Z1m</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">10</td>
+                <td class="tg-0pky">հայր</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1;10</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">12</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">26</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">father\_S4m</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">11</td>
+                <td class="tg-0pky">տէր</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">2;11</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">13</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">29</td>
+                <td class="tg-0pky">title</td>
+                <td class="tg-0pky">lord\_S7.1+/S2.2m</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">12</td>
+                <td class="tg-0pky">որդի</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1;6</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">9</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">20</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">son\_S4m</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">13</td>
+                <td class="tg-0pky">ամենայն</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">2;9</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">10</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">24</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">all\_N5.1+</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">առնուլ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1;4</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">8</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">17</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">take\_A9+</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">15</td>
+                <td class="tg-0pky">աստուած</td>
+                <td class="tg-0pky">-1</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1;4</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">god\_S9</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">16</td>
+                <td class="tg-0pky">անուն</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1;4</td>
+                <td class="tg-0pky">1;3</td>
+                <td class="tg-0pky">7</td>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">22</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">name\_A1</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">17</td>
+                <td class="tg-0pky">պատասխանի</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1;4</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">9</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">answer\_Q2.2</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">18</td>
+                <td class="tg-0pky">զկալ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">1;2</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">7</td>
+                <td class="tg-0pky">object</td>
+                <td class="tg-0pky">floor\_H2</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">19</td>
+                <td class="tg-0pky">խուլ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">1;2</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky">9</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">deaf\_X3.2-</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">20</td>
+                <td class="tg-0pky">կամիլ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">1;3</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">8</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">intend\_X7+</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">21</td>
+                <td class="tg-0pky">գնալ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">1;2</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">10</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">go\_M1</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">22</td>
+                <td class="tg-0pky">ձեռն</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">1;2</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">10</td>
+                <td class="tg-0pky">object</td>
+                <td class="tg-0pky">hand\_B1</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">23</td>
+                <td class="tg-0pky">հրեշտակ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">1;2</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">7</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">angel\_S9mf</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">24</td>
+                <td class="tg-0pky">յովսէփ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">1;2</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">10</td>
+                <td class="tg-0pky">person</td>
+                <td class="tg-0pky">joseph\_Z1m</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">25</td>
+                <td class="tg-0pky">բորոտիւն</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">leprosy\_B2-</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">26</td>
+                <td class="tg-0pky">ձրի</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">gratuitous\_S6-</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">27</td>
+                <td class="tg-0pky">հեծան</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">object</td>
+                <td class="tg-0pky">joist\_O2</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">28</td>
+                <td class="tg-0pky">յարդ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">object</td>
+                <td class="tg-0pky">straw\_L3</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">29</td>
+                <td class="tg-0pky">յափշտակութիւն</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">ravaging\_A1.1.2</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">30</td>
+                <td class="tg-0pky">անշեջ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">attribute</td>
+                <td class="tg-0pky">inextinguishable\_Z99</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">31</td>
+                <td class="tg-0pky">հասուցանել</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">1</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">reach\_M1</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">32</td>
+                <td class="tg-0pky">գալ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">12</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">16</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">come\_M1</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">33</td>
+                <td class="tg-0pky">տեսանել</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">10</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">see\_X3.4</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">34</td>
+                <td class="tg-0pky">տալ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">10</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">14</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">give\_A9-</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">36</td>
+                <td class="tg-0pky">առնել</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">8</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">12</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">make\_A1.1.1</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">37</td>
+                <td class="tg-0pky">խօսել</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">7</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">11</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">speak\_Q2.1</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">38</td>
+                <td class="tg-0pky">պատարագ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">7</td>
+                <td class="tg-0pky">concept</td>
+                <td class="tg-0pky">sacrifice\_S9</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">39</td>
+                <td class="tg-0pky">ներքին</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky">6</td>
+                <td class="tg-0pky">attribute</td>
+                <td class="tg-0pky">inner\_M6</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">40</td>
+                <td class="tg-0pky">սաստել</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">7</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">rebuke\_Q2.2</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">41</td>
+                <td class="tg-0pky">արտաքին</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky">6</td>
+                <td class="tg-0pky">attribute</td>
+                <td class="tg-0pky">external\_M6</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">42</td>
+                <td class="tg-0pky">լնուլ</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky">6</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">fill\_N5.1+</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">43</td>
+                <td class="tg-0pky">հայհոյել</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky">6</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">blaspheme\_Q2.2/S7.2-/S9</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">44</td>
+                <td class="tg-0pky">վաղվաղակի</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">3</td>
+                <td class="tg-0pky">7</td>
+                <td class="tg-0pky">misc</td>
+                <td class="tg-0pky">suddenly\_N3.8+</td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">45</td>
+                <td class="tg-0pky">ձգել</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0;0</td>
+                <td class="tg-0pky">0</td>
+                <td class="tg-0pky">2</td>
+                <td class="tg-0pky">6</td>
+                <td class="tg-0pky">verb</td>
+                <td class="tg-0pky">stretch\_N3.6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
