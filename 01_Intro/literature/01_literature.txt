@@ -1,0 +1,1 @@
+"Chapter 1: Introduction to Data Science." In: George, Nathan: Practical Data Science with Python. O'Reilly, 2021. Zugang zur online Resource über die UB Tübingen. ISBN 978-1-80107-197-0
